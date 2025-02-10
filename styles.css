@@ -3,13 +3,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.avatar {
-    width: 150px;
-    border-radius: 100px;
-}
-
 #card {
-    width: 200px;
+    max-width: 200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -22,10 +17,21 @@ body {
     transition: background-color 1s ease-out;
 }
 
+.avatar {
+    width: 150px;
+    border-radius: 100px;
+}
+
 .name {
     transition: color 0.3s;
 }
 
 .name:hover {
     color: #3D44AE;
+}
+
+@media (max-width: 240px) {
+    .avatar {
+        width: 100%;
+    }
 }
