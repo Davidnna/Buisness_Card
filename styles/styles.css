@@ -1,37 +1,44 @@
 body {
-    margin: 20px;
+    margin: 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #card {
     max-width: 200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.5em;
     text-align: center;
     background: #9067B5;
     color: #22006C;
-    border: 6px solid #003566;
-    border-radius: 10px;
+    border: 0.4em solid #003566;
+    border-radius: 0.6em;
     text-shadow: 1px 3px 7px #121212;
     box-shadow: 1px 3px 5px #121212;
-    transition: background-color 1s ease-out;
+    transition: all 2s ease-out;
 }
 
-.avatar {
-    width: 150px;
-    border-radius: 100px;
+/* Image */
+figure {
+    margin: 0;
 }
 
-.name {
+figure .avatar {
+    width: 10em;
+    border-radius: 50%;
+}
+
+/* Details */
+article .name {
     transition: color 0.3s;
 }
 
-.name:hover {
+article .name:hover {
     color: #3D44AE;
 }
 
+/* Responsive Design */
 @media (max-width: 240px) {
-    .avatar {
+    figure .avatar {
         width: 100%;
     }
 }

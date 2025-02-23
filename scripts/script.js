@@ -1,3 +1,4 @@
+// Animate background on page load
 window.onload = function() {
     const card = document.getElementById("card");
 
